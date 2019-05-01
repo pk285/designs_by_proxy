@@ -1659,14 +1659,14 @@ fieldset:disabled a.custom-file-control::before {
   pointer-events: none; }
 
 .btn-primary {
-  color: #fff;
-  background-color: #009688;
-  border-color: #009688;
+  color: #343D46
+  background-color: #343D46;
+  border-color: #343D46;
   box-shadow: none; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #007065;
-    border-color: #00635a; }
+    background-color: #343D46;
+    border-color: #343D46; }
   .btn-primary:focus, .btn-primary.focus {
     box-shadow: none, 0 0 0 0.2rem rgba(0, 150, 136, 0.5); }
   .btn-primary.disabled, .btn-primary:disabled {
