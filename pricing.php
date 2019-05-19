@@ -39,7 +39,7 @@
 				  <div class="collapse navbar-collapse" id="navbarNav">
 				    <ul class="navbar-nav">
 				      <li class="nav-item">
-				        <a class="nav-link" href="index2.html" style="color: #ffffff;">Home</a>
+				        <a class="nav-link" href="index.html" style="color: #ffffff;">Home</a>
 				      </li>
 				      <li class="nav-item">
 				        <a class="nav-link" href="pricing.html" style="color: #ffffff;">Pricing and Services</a>
@@ -113,73 +113,84 @@
 			        </div>
 			    </div>
 
-			    <div class = "container"><center>
-			    	<form name="freecontactform" method="post" action="freecontactformprocess.php" onsubmit="return validate.check(this)">
-						<table width="400px" class="freecontactform">
-						<tr>
-						 <td colspan="2">
-						  
-						 <div class="freecontactformheader">Contact Us</div>
-						  
-						 <div class="freecontactformmessage">Fields marked with <span class="required_star"> * </span> are mandatory.</div>
-						  
-						 </td>
-						</tr>
-						<tr>
-						 <td valign="top">
-						  <label for="Full_Name" class="required">Full Name<span class="required_star"> * </span></label>
-						 </td>
-						 <td valign="top">
-						  <input type="text" name="Full_Name" id="Full_Name" maxlength="80" style="width:230px">
-						 </td>
-						</tr>
-						<tr>
-						 <td valign="top">
-						  <label for="Email_Address" class="required">Email Address<span class="required_star"> * </span></label>
-						 </td>
-						 <td valign="top">
-						  <input type="text" name="Email_Address" id="Email_Address" maxlength="100" style="width:230px">
-						 </td>
-						</tr>
-						<tr>
-						 <td valign="top">
-						  <label for="Telephone_Number" class="not-required">Phone Number</label>
-						 </td>
-						 <td valign="top">
-						  <input type="text" name="Telephone_Number" id="Telephone_Number" maxlength="100" style="width:230px">
-						 </td>
-						</tr>
-						<tr>
-						 <td valign="top">
-						  <label for="Your_Message" class="required">Project Description<span class="required_star"> * </span></label>
-						 </td>
-						 <td valign="top">
-						  <textarea style="width:230px;height:160px" name="Your_Message" id="Your_Message" maxlength="2000"></textarea>
-						 </td>
-						</tr>
-						<tr>
-						 <td colspan="2" style="text-align:center" >
-						  <div class="antispammessage">
-						  To help prevent automated spam, please answer this question
-						  <br /><br />
-							  <div class="antispamquestion">
-							   <span class="required_star"> * </span>
-							   Using only numbers, what is 10 plus 15? &nbsp; 
-							   <input type="text" name="AntiSpam" id="AntiSpam" maxlength="100" style="width:30px">
-							  </div>
-						  </div>
-						 </td>
-						</tr>
-						<tr>
-						 <td colspan="2" style="text-align:center" >
-						 <br /><br />
-						  <input type="submit" value=" Submit Form " style="width:200px;height:40px">
-						  <br /><br />
-						 </td>
-						</tr>
-						</table>
-					</form>
-				</div></center>
+			    <!--Section: Contact v.2-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="validateForm()">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
 
 
 				
@@ -237,5 +248,64 @@
 			<script type="text/javascript" src="js/script.js"></script>
 			<script type="text/javascript" src="js/bootstrap-material-design.min.js"></script>
 			<script type="text/javascript" src="js/bootstrap-material-design.js"></script>
+
+			<script>
+			  // function validateForm() {
+			  // var name =  document.getElementById('name').value;
+			  // if (name == "") {
+			  //     document.getElementById('status').innerHTML = "Name cannot be empty";
+			  //     return false;
+			  // }
+			  // var email =  document.getElementById('email').value;
+			  // if (email == "") {
+			  //     document.getElementById('status').innerHTML = "Email cannot be empty";
+			  //     return false;
+			  // } else {
+			  //     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			  //     if(!re.test(email)){
+			  //         document.getElementById('status').innerHTML = "Email format invalid";
+			  //         return false;
+			  //     }
+			  // }
+			  // var subject =  document.getElementById('subject').value;
+			  // if (subject == "") {
+			  //     document.getElementById('status').innerHTML = "Subject cannot be empty";
+			  //     return false;
+			  // }
+			  // var message =  document.getElementById('message').value;
+			  // if (message == "") {
+			  //     document.getElementById('status').innerHTML = "Message cannot be empty";
+			  //     return false;
+			  // }
+			  // document.getElementById('status').innerHTML = "Sending...";
+			  // document.getElementById('contact-form').submit();
+
+			  // }
+			  	document.getElementById('status').innerHTML = "Sending...";
+				    formData = {
+				        'name'     : $('input[name=name]').val(),
+				        'email'    : $('input[name=email]').val(),
+				        'subject'  : $('input[name=subject]').val(),
+				        'message'  : $('textarea[name=message]').val()
+				    };
+
+
+				   $.ajax({
+				    url : "mail.php",
+				    type: "POST",
+				    data : formData,
+				    success: function(data, textStatus, jqXHR)
+				    {
+
+				        $('#status').text(data.message);
+				        if (data.code) //If mail was sent successfully, reset the form.
+				        $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+				    },
+				    error: function (jqXHR, textStatus, errorThrown)
+				    {
+				        $('#status').text(jqXHR);
+				    }
+				});
+			</script>
 		</body>
 	</html>
