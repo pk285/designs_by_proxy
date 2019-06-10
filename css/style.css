@@ -5,6 +5,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+
 a {
   color: #343D46;
   transition: 0.5s;
@@ -926,7 +927,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .contact-info address,
 #contact .contact-info p {
   margin-bottom: 0;
-  color: #000;
+  color: #ffffff;
 }
 
 #contact .contact-info h3 {
@@ -934,7 +935,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #999;
+  color: #ffffff;
 }
 
 #contact .contact-info a {

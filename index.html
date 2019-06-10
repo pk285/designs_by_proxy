@@ -1,83 +1,269 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="assets/images/icon.png">
+  <title>Designs by Proxy</title>
 
-    <title>Designs by Proxy</title>
+  <link href="css/bootstrap-material-design.min.css" rel="stylesheet">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap-material-design.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
-  </head>
+  <!-- <link href="css/cover.css" rel="stylesheet"> -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
 
-  <body class="text-center">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <img src="assets/images/icon.png" class="masthead-brand" alt="Logo">
-          <!-- <h3 class="masthead-brand">Designs by Proxy</h3> -->
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link" href="index.html" style="color: #ffffff;">Home</a>
-            <a class="nav-link" href="pricing.html" style="color: #ffffff;">Pricing and Services</a>
-          </nav>
+</head>
+
+<body id="body">
+
+  <header id="header" style="background-color: #343D46; height: 6rem">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+         <a href="#body"><img src="assets/images/icon.png" alt="" title="" /></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html" style="color: #ffffff;">Home</a></li>
+          <!-- <li><a href="about.html" style="color: #ffffff;">About Us</a></li> -->
+          <li><a href="pricing.html" style="color: #ffffff;">Pricing and Services</a></li>
+          <li><a href="portfolio.html" style="color: #ffffff;">Portfolio</a></li>
+          <<!-- li><a href="team.html" style="color: #ffffff;">Team</a></li> -->
+          <li><a href="contact.html" style="color: #ffffff;">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="jumbotron" style="
+    height: 450px; 
+    background-image: url(assets/images/homepage1.jpg);
+    background-size: cover;">
+    <section id="intro">
+      <div class="intro-content">
+        <h2>Making <span>your ideas</span><br>happen!</h2>
+        <div>
+          <a href="pricing.html" class="btn-get-started scrollto">Get Started</a>
+          <a href="portfolio.html" class="btn-projects scrollto">Our Projects</a>
         </div>
-      </header>
+      </div>
+    </section>
+  </div>
 
-      <!-- Contact -->
+  <main id="main">
+    <section id="about" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <img src="assets/images/tools.jpg" alt="">
+          </div>
 
-      <footer class="mastfoot mt-auto">
-         <div class="row">
-                <div class="col-12 col-md">
-                  <!-- <img class="mb-2" src="./Pricing example for Bootstrap_files/bootstrap-solid.svg" alt="" width="24" height="24"> -->
-                  <small class="d-block mb-3 text1" style="color: #ffffff;">2019 &copy; Designs by Proxy</small>
-              <div class="social-set">
-                      <a href="https://www.facebook.com/designsproxy/" target="_blank">
-                        <li class="fa fa-facebook mt-4 fa-2x" style="color: #ff7bac;"></li>
-                      </a>
-                      <a href="https://www.instagram.com/designsbyproxy/" target="_blank">
-                        <li class="fa fa-instagram mt-4 fa-2x" style="color: #ff7bac;"></li>
-                      </a>
-                      <a href="https://twitter.com/designs_proxy" target="_blank">
-                        <li class="fa fa-twitter mt-4 fa-2x" style="color: #ff7bac;"></li>
-                      </a>
-                    </div>
-                </div>
-                
-                <div class="col-6 col-md">
-                  <h5 style="color: #ffffff;">Resources</h5>
-                  <ul class="list-unstyled text-small">
-                      <li><a class="text1" href="about.html" style="color: #ffffff;">About</a></li>
-                      <li><a class="text1" href="terms.html" style="color: #ffffff;">Terms</a></li>
-                      <li><a class="text1" href="pricing.html" style="color: #ffffff;">Pricing and Services</a></li>
-                      <li><a class="text1" href="team.html" style="color: #ffffff;">Meet the Team</a></li>
-                  </ul>
-                </div>
-                <div class="col-6 col-md">
-                  <h5 style="color: #ffffff;">Information</h5>
-                  <ul class="list-unstyled text-small">
-                      <!-- <li style="list-style: none; color: #ff7bac;"><i class="fa fa-envelope mt-4 fa-2x" style="color: #ff7bac;"></i>
-                        <small class="d-block mb-3 text1">(555) 555-5555</small>
-                      </li> -->
-                      <li style="list-style: none; color: #ff7bac;"><i class="fa fa-phone mt-4 fa-2x" style="color: #ff7bac;"></i>
-                          <small class="d-block mb-3 text1">designsproxy@gmail.com</small>
-                      </li>
-                  </ul>
+          <div class="col-lg-6 content">
+            <h2 style="color: #0c2e8a">Our team is ready to help you!</h2>
+            <b><h3>Success is measured with the use of anayltics</h3></b>
+            <p style="color: #343D46;">Our team uses a variety of performance measures to make sure your project is getting done on time.
+            Just know that you can always "count" on us to get the work done!</p>
+            <b><h3>Our team uses only the best tools</h3></b>
+            <p>Our team is extremely up to date on all the latest technologies. We make sure your project is utilizing the best tools out there. We use key metrics to make sure our team is productive.</p>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 style="color: #0c2e8a;">Services</h2>
+          <p >We offer a wide variety of services</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft">
+              <div class="icon"><i class="fa fa-mobile-phone" style="color: #ff7bac;"></i></div>
+              <h4 class="title"><a href="">Mobile Development</a></h4>
+              <p class="description">We can create stunning mobile apps for Anroid and iOS.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight">
+              <div class="icon"><i class="fa fa-laptop"></i></div>
+              <h4 class="title"><a href="">Web Development</a></h4>
+              <p class="description">We can create beautiful websites that suit your business needs!</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-comment"></i></div>
+              <h4 class="title"><a href="">Marketing and Social Media</a></h4>
+              <p class="description">We can provide you with marketing assistance and make sure your social media is poppin'!</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href="">Analytics and Data Science</a></h4>
+              <p class="description">Did someone say metrics? We can help you analyze your data using our various data science tools.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="clients">
+      <div class="container">
+        <div class="section-header">
+          <h2>Clients</h2>
+          <p>Our clients love us! Check out some of our clients below.</p>
+        </div>
+        <a href="http://reachbeyondrelief.com/"><img src="assets/images/clients/client-1.jpg" alt="" height="100px"></a>
+      </div>
+    </section>
+
+    <section id="team" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Team</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/images/prahasi.jpg" alt=""></div>
+              <div class="details">
+                <h4>Prahasi Kacham</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href="https://twitter.com/pk2855"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.facebook.com/prahasi"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/awesomepercyyy"><i class="fa fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/prahasik/"><i class="fa fa-linkedin"></i></a>
                 </div>
               </div>
-      </footer>
-    </div>
+            </div>
+          </div>
+      </div>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap-material-design.min.js"></script>
-  </body>
+     <center><b><p class="lead" style="color: #0c2e8a;">We are hiring! Email designsproxy@gmail.com to find out about available opportunities!</p></center></b>
+
+    <!-- <section id="contact" class="wow fadeInUp">
+      <div class="container">
+        <div class="row contact-info">
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>Fort Lauderdale, Florida, USA</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="(555) 555-55555">+1 5589 55488 55</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:designsproxy@gmail.com">designsproxy@gmail.com</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> -->
+
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <br>
+      <div class="row contact-info">
+          <div class="col-md-4">
+            <div class="contact-address">
+              <h5 style="color: #ffffff;">Address</h3>
+              <p style="color: #ffffff;">Fort Lauderdale, Florida, USA</p>
+              <div class="social-set">
+                <a href="https://www.facebook.com/designsproxy/" target="_blank">
+                  <li class="fa fa-facebook mt-4 fa-2x" style="color: #FFFFFF;"></li>
+                </a>
+                <a href="https://www.instagram.com/designsbyproxy/" target="_blank">
+                  <li class="fa fa-instagram mt-4 fa-2x" style="color: #FFFFFF;"></li>
+                </a>
+                <a href="https://twitter.com/designs_proxy" target="_blank">
+                  <li class="fa fa-twitter mt-4 fa-2x" style="color: #FFFFFF;"></li>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-4">
+            <h5 style="color: #ffffff;">Resources</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text1" href="terms.html" style="color: #ffffff;">Terms</a></li>
+                <li><a class="text1" href="pricing.html" style="color: #ffffff;">Pricing and Services</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <h5 style="color: #ffffff;">Email</h3>
+              <p style="color: #ffffff;">designsproxy@gmail.com</p>
+              <h5 style="color: #ffffff;">Phone Number</h3>
+              <p style="color: #ffffff;">(555) 555-55555</p>
+            </div>
+          </div>
+
+        </div>
+      <div style="color: #ffffff;"><center>
+        &copy; Copyright <strong>Designs by Proxy</strong>. All Rights Reserved
+      </div></center>
+      
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
 </html>
