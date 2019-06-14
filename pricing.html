@@ -42,7 +42,8 @@
 				<!-- <li><a href="about.html" style="color: #ffffff;">About Us</a></li> -->
 				<a class="nav-item nav-link" href="pricing.html" style="color: #ffffff; font-weight: 700;">Pricing and
 					Services</a>
-				<a class="nav-item nav-link" href="portfolio.html" style="color: #ffffff; font-weight: 700;">Portfolio</a>
+				<a class="nav-item nav-link" href="portfolio.html"
+					style="color: #ffffff; font-weight: 700;">Portfolio</a>
 				<!-- li><a href="team.html" style="color: #ffffff;">Team</a></li> -->
 				<a class="nav-item nav-link" href="contact.html" style="color: #ffffff; font-weight: 700;">Contact</a>
 			</div>
@@ -118,8 +119,30 @@
 
 
 	<center>
-		<p class="lead" style="color: #ff7bac">Please email designsproxy@gmail.com to get started!</p>
+		<p class="lead" style="color: #ff7bac">Fill out the form below to get started!</p>
 	</center>
+	<div class="card container" style="margin-bottom: 1rem;">
+		<form class="contact-form" novalidate style="margin-top: 1rem;">
+			<div class="form-group">
+				<label for="name">Name</label>
+				<input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Name" required>
+				<div class="invalid-feedback">Please enter your name.</div>
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" class="form-control" id="email" placeholder="Your Email" required>
+				<div class="valid-feedback">Make sure you monitor this email so we can get back to you promptly.</div>
+				<div class="invalid-feedback">Please enter a valid email.</div>
+			</div>
+			<div class="form-group">
+				<label for="message">Message</label>
+				<textarea class="form-control" id="message" rows="5" placeholder="Your message to us here! Make sure to mention the plan you're interested in." required></textarea>
+				<div class="valid-feedback">Make sure your message mentions the plan and what you want us to work on please!</div>
+				<div class="invalid-feedback">Please enter a message, whatever you're thinking for us to work on would be a good message!</div>
+			</div>
+			<button type="submit" class="btn btn-primary">Send</button>
+		</form>
+	</div>
 
 
 	<footer id="footer">
@@ -179,39 +202,8 @@
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/bootstrap-material-design.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap-material-design.js"></script>
-
+	<script type="text/javascript" src="js/formvalidator.js"></script>
 	<script>
-		// function validateForm() {
-		// var name =  document.getElementById('name').value;
-		// if (name == "") {
-		//     document.getElementById('status').innerHTML = "Name cannot be empty";
-		//     return false;
-		// }
-		// var email =  document.getElementById('email').value;
-		// if (email == "") {
-		//     document.getElementById('status').innerHTML = "Email cannot be empty";
-		//     return false;
-		// } else {
-		//     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-		//     if(!re.test(email)){
-		//         document.getElementById('status').innerHTML = "Email format invalid";
-		//         return false;
-		//     }
-		// }
-		// var subject =  document.getElementById('subject').value;
-		// if (subject == "") {
-		//     document.getElementById('status').innerHTML = "Subject cannot be empty";
-		//     return false;
-		// }
-		// var message =  document.getElementById('message').value;
-		// if (message == "") {
-		//     document.getElementById('status').innerHTML = "Message cannot be empty";
-		//     return false;
-		// }
-		// document.getElementById('status').innerHTML = "Sending...";
-		// document.getElementById('contact-form').submit();
-
-		// }
 		document.getElementById('status').innerHTML = "Sending...";
 		formData = {
 			'name': $('input[name=name]').val(),
