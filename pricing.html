@@ -122,7 +122,7 @@
 		<p class="lead" style="color: #ff7bac">Fill out the form below to get started!</p>
 	</center>
 	<div class="card container" style="margin-bottom: 1rem;">
-		<form class="contact-form" novalidate style="margin-top: 1rem;">
+		<form class="contact-form" id="contact-form" novalidate style="margin-top: 1rem;">
 			<div class="form-group">
 				<label for="name">Name</label>
 				<input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Name" required>
@@ -140,7 +140,7 @@
 				<div class="valid-feedback">Make sure your message mentions the plan and what you want us to work on please!</div>
 				<div class="invalid-feedback">Please enter a message, whatever you're thinking for us to work on would be a good message!</div>
 			</div>
-			<button type="submit" class="btn btn-primary">Send</button>
+			<button type="submit" class="btn btn-primary" id="sendMessageBtn">Send</button>
 		</form>
 	</div>
 
@@ -204,31 +204,6 @@
 	<script type="text/javascript" src="js/bootstrap-material-design.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap-material-design.js"></script>
 	<script type="text/javascript" src="js/formvalidator.js"></script>
-	<script>
-		document.getElementById('status').innerHTML = "Sending...";
-		formData = {
-			'name': $('input[name=name]').val(),
-			'email': $('input[name=email]').val(),
-			'subject': $('input[name=subject]').val(),
-			'message': $('textarea[name=message]').val()
-		};
-
-
-		$.ajax({
-			url: "mail.php",
-			type: "POST",
-			data: formData,
-			success: function (data, textStatus, jqXHR) {
-
-				$('#status').text(data.message);
-				if (data.code) //If mail was sent successfully, reset the form.
-					$('#contact-form').closest('form').find("input[type=text], textarea").val("");
-			},
-			error: function (jqXHR, textStatus, errorThrown) {
-				$('#status').text(jqXHR);
-			}
-		});
-	</script>
 </body>
 
 </html>

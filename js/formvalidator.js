@@ -16,3 +16,27 @@
         });
     }, false);
 })();
+
+$("#sendMessageBtn").click(function(event) {
+    event.preventDefault();
+    var name = $("input#name").val();
+    var email = $("input#email").val();
+    var message = $("textarea#message").val();
+
+    $.ajax({
+        url: "./php/sendmail.php",
+        type: "post",
+        data: {
+            name: name,
+            email: email,
+            message: message
+        },
+        success: function() {
+            $("#contact-form").trigger("reset");
+            alert("Email sent successully!");            
+        },
+        error: function() {
+            alert("Email did not send!");
+        }
+    });
+});
